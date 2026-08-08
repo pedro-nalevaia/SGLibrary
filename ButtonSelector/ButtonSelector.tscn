@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b5hjhx6u2j8hd"]
+
+[ext_resource type="Script" uid="uid://cld40noo7ew3q" path="res://ScenesAndScripts/MultiProject/ButtonSelector/ButtonSelector.cs" id="1_gjrjx"]
+
+[node name="Control" type="Control" unique_id=135248998]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gjrjx")
