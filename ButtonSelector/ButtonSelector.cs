@@ -4,7 +4,7 @@ using System;
 public partial class ButtonSelector : Control
 {
 	SelectorSingleButton[] Buttons;
-	int CurrSelectedId = -1;
+	public int CurrSelectedId = -1;
 	Vector2I SelectorDimensions;
 	Vector2 QueryDrawSelectorPos;
 
