@@ -55,6 +55,29 @@ public partial class ButtonSelector : Control
 			}
 		}
 	}
+	//Used to change the textures of buttons, it sets all the buttons that it can with a given texture array
+	//then it makes the other buttons invisible
+	//if the number of textures is greater than the number of buttons, it will spit out an error
+	public void ReloadTexture(Texture2D[] TextArray)
+	{
+		if (TextArray.Length > Buttons.Length)
+		{
+			GD.PushError("Button Selector cannot load texture that contains more textures than the number of buttons!");
+			return;
+		}
+		for (int i = 0; i < TextArray.Length; i++)
+		{
+			Buttons[i].TextureNormal = TextArray[i];
+		}
+		if (TextArray.Length == Buttons.Length)
+		{
+			return;
+		}
+		for (int i = TextArray.Length; i < Buttons.Length; i++)
+		{
+			Buttons[i].visible = false;
+		}
+	}
 	public Vector2 SetButtonPos(
 			ENUM_READING_ORDER ReadingOrder, 
 			Vector2I Grid,
