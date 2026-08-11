@@ -68,6 +68,7 @@ public partial class ButtonSelector : Control
 		for (int i = 0; i < TextArray.Length; i++)
 		{
 			Buttons[i].TextureNormal = TextArray[i];
+			Buttons[i].Visible = true;
 		}
 		if (TextArray.Length == Buttons.Length)
 		{
