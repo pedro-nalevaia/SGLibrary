@@ -75,7 +75,7 @@ public partial class ButtonSelector : Control
 		}
 		for (int i = TextArray.Length; i < Buttons.Length; i++)
 		{
-			Buttons[i].visible = false;
+			Buttons[i].Visible = false;
 		}
 	}
 	public Vector2 SetButtonPos(
