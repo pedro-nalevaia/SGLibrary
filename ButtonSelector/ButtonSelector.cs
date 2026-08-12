@@ -47,12 +47,12 @@ public partial class ButtonSelector : Control
 			{
 				Buttons[k].TextureNormal = TexturePtr[k];
 				Buttons[k].Visible = true;
-				SetButtonLogic(k);
 			}
 			else 
 			{
 				Buttons[k].Visible = false;
 			}
+			SetButtonLogic(k);
 		}
 	}
 	public Vector2 SetButtonPos(
