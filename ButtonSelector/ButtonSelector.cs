@@ -107,6 +107,7 @@ public partial class ButtonSelector : Control
 		QueryDrawSelectorPos = Buttons[ButtonId].Position -= 
 			new Vector2(1,1);
 		QueueRedraw();
+		CurrSelectedId = ButtonId;
 
 	}
 	public override void _Draw()
