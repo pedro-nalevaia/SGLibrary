@@ -11,7 +11,7 @@ public partial class ButtonSelector : Control
 
 	//Put the grid in integers, so a roll would be a 
 	//10x1
-	public unsafe void Initialize(Vector2 StartingPos, 
+	public void Initialize(Vector2 StartingPos, 
 				Vector2I Grid, 
 				Vector2I ButtonDimensions,
 				int NoOfButtons,
@@ -131,6 +131,7 @@ public partial class ButtonSelector : Control
 		QueryDrawSelectorPos = Buttons[ButtonId].Position -= 
 			new Vector2(1,1);
 		QueueRedraw();
+		CurrSelectedId = ButtonId;
 
 	}
 	public override void _Draw()
