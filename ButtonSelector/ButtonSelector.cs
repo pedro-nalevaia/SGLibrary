@@ -47,12 +47,12 @@ public partial class ButtonSelector : Control
 			{
 				Buttons[k].TextureNormal = TexturePtr[k];
 				Buttons[k].Visible = true;
-				SetButtonLogic(k);
 			}
 			else 
 			{
 				Buttons[k].Visible = false;
 			}
+			SetButtonLogic(k);
 		}
 	}
 	//Used to change the textures of buttons, it sets all the buttons that it can with a given texture array
