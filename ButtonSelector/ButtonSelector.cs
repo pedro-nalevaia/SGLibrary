@@ -128,7 +128,7 @@ public partial class ButtonSelector : Control
 	}
 	public void PressedButton(int ButtonId)
 	{
-		QueryDrawSelectorPos = Buttons[ButtonId].Position -= 
+		QueryDrawSelectorPos = Buttons[ButtonId].Position - 
 			new Vector2(1,1);
 		QueueRedraw();
 		CurrSelectedId = ButtonId;
